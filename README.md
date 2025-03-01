@@ -130,19 +130,55 @@ Perform DC analysis ,transient analysis and frequency response and extract the r
       Av = 2.885 dB
 </pre>
 
+### Circuit 2
+
+<pre>
+       Iss = 0.875 * 10^-3 A
+</pre>
+
+![image](https://github.com/user-attachments/assets/ac29dd00-150b-4b4a-a155-74693f405ff2)
+
+**1) DC Analysis :**
+
+![image](https://github.com/user-attachments/assets/4fbfb2af-57fe-46e4-a23c-284dede7eeb6)
+
+**2) Transient Analysis:**
+
+![image](https://github.com/user-attachments/assets/851ea4b4-8a91-4b7e-8225-bc9d593421d3)
+
+**3) AC Analysis:**
+
+![image](https://github.com/user-attachments/assets/f0248d13-a395-4c03-83f5-cea9004132d4)
 
 
+  ### Circuit 3
+  #### Calculation
+ <pre>   Find VB
+
+            | Vg - Vs| > |Vt|
+
+          | Vg - 0.6| > | -0.366|
+
+               | Vg | >  |0.966|
+
+</pre>   
+
+![Screenshot 2025-03-01 194928](https://github.com/user-attachments/assets/4e44bb7a-4b67-44eb-b98e-3bc66427677c)
 
 
+**1) DC Analysis :**
+
+![image](https://github.com/user-attachments/assets/81d36c98-953b-4fc2-9c21-55fa76b160f4)
+
+**2) Transient Analysis:**
+
+![image](https://github.com/user-attachments/assets/38396a88-b4fc-4494-99db-f7f156d43987)
+
+**3) AC Analysis:**
+
+![image](https://github.com/user-attachments/assets/669dc1ca-df6d-4cd5-a5a1-1df8de092a53)
 
 
-
-
-
-
-
-
-  
 
 
 
