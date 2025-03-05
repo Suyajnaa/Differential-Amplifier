@@ -6,7 +6,7 @@ A **differential amplifier** is a type of electronic amplifier that amplifies th
 
  <pre>                  
                         Vout = A [(Vin+)−(Vin-)]
-<br>                       where , A is the gain of the amplifier.
+<br>                       where, A is the gain of the amplifier.
 
                         Adiff = gm × RD
                            where , gm = Transconductance 
@@ -14,6 +14,44 @@ A **differential amplifier** is a type of electronic amplifier that amplifies th
  </pre>
  
 ### Why differential amplifier is more efficient than mosfet ?
+A differential amplifier reduces noise primarily by rejecting common-mode signals (such as interference and noise) while amplifying the difference between two input signals. This is achieved through common-mode rejection (CMR). 
+1. Common-Mode Rejection Ratio (CMRR)
+• A differential amplifier amplifies the difference between its two inputs:
+<pre>
+          𝑉out = 𝐴𝑑 × ( 𝑉+ − 𝑉−)
+             where 𝐴𝑑 is the differential gain.
+</pre>
+• Any noise that appears identically on both inputs (common-mode noise) gets largely canceled out.
+2. Power Supply and External Noise Rejection
+• External noise (such as electromagnetic interference from power lines) usually affects both input terminals equally.
+• Since the differential amplifier ignores signals that are common to both inputs, the noise is rejected.
+3. Reduction of Ground Loop Noise
+In single-ended circuits, ground loops can introduce unwanted noise.
+Differential amplifiers do not rely on a single ground reference, reducing susceptibility to ground loops.
+4. Improved Signal Integrity in Noisy Environments
+Used in sensor and communication applications where long cables can pick up interference.
+Differential signaling (e.g., twisted pair cables) ensures that noise is picked up equally on both wires, making it easier for the differential amplifier to reject it.
+5. Differential Pair Design
+Active components like transistors or op-amps in a differential pair configuration inherently suppress noise.
+Balanced circuit topology ensures symmetrical behavior, further improving noise immunity.
+Conclusion
+A differential amplifier is effective at rejecting noise and interference by amplifying only the desired differential signal while canceling out common-mode noise. This makes it essential for applications like instrumentation, communication, and audio processing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 A differential amplifier is considered considerably more efficient than a single MOSFET because it has a superior ability to reject common-mode noise, increasing only the difference between two input signals while thoroughly filtering out any noise on both inputs; a single MOSFET would increase the desired signal and any common-mode noise on the input, making the differential amplifier ideal for sensitive applications where noise reduction is important. And also differential configuration enables us to bias the amplifier and to couple amplifier stages together without the need for bypass and coupling capacitor.
 
 ### Types of operation
@@ -168,13 +206,15 @@ Perform DC analysis ,transient analysis and frequency response and extract the r
 
 **1) DC Analysis :**
 
+![image](https://github.com/user-attachments/assets/4d5f6df4-d361-41e2-986d-ac3d6f2ee755)
+
 ![image](https://github.com/user-attachments/assets/81d36c98-953b-4fc2-9c21-55fa76b160f4)
 
-**2) Transient Analysis:**
+**2) Transient Analysis :**
 
 ![image](https://github.com/user-attachments/assets/38396a88-b4fc-4494-99db-f7f156d43987)
 
-**3) AC Analysis:**
+**3) AC Analysis :**
 
 ![image](https://github.com/user-attachments/assets/669dc1ca-df6d-4cd5-a5a1-1df8de092a53)
 
